@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tailwind CSS Theme Switcher for Next.js
+
+A simple Tailwind CSS theme switcher template for Next.js projects, enabling quick and easy implementation of light and dark mode switching.
+
+## Features
+
+- 🌓 **Theme Switching:** Toggle between light and dark themes with ease.
+- ⚡ **Tailwind CSS:** Styled with Tailwind CSS for rapid development.
+- 🚀 **Next.js:** Built with Next.js for optimal performance and developer experience.
+- 💻 **Responsive:** Fully responsive design, works seamlessly across all devices.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [npm](https://www.npmjs.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone the repository:**
 
-## Learn More
+   ```bash
+   git clone https://github.com/DajkaCsaba/tailwind-theme-switcher.git
+   cd tailwind-theme-switcher
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependecies:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   corepack pnpm install 
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Run the development server:**
 
-## Deploy on Vercel
+   ```bash
+   corepack pnpm run dev 
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   Open http://localhost:3000 in your browser to see the result.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Usage  
+
+- The theme switcher component is located in components/ThemeSwitcher.js.
+- The default theme is light. Click the switcher button to toggle between light and dark modes.
+- Tailwind's utility classes have been extended to support custom theming. You can adjust colors and styles in the tailwind.config.js file.
