@@ -1,10 +1,10 @@
 import { TEXT_SIZE } from "@/utils/common/dynamic-sizes";
-import { Size, TailwindStyle } from "@/utils/type-aliasses";
+import { SizeOption, TailwindStyle } from "@/utils/type-aliasses";
 import React from "react";
 
 type Props = {
   text: string;
-  size?: Size;
+  size?: SizeOption;
   className?: TailwindStyle;
 };
 

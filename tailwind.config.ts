@@ -30,8 +30,23 @@ const spacing = {
   mdl: "1.37vw",
   lg: "3.5vh",
   lgl: "1.8vw",
-  elg: "6.32vh",
-  elgl: "3.6vw",
+  xl: "6.32vh",
+  xll: "3.6vw",
+};
+
+const elementSize = {
+  xs: "1.5vh",
+  xsl: "0.7vw",
+  sm: "2vh",
+  sml: "0.82vw",
+  base: "2.5vh",
+  basel: "0.93vw",
+  md: "3vh",
+  mdl: "1.37vw",
+  lg: "3.5vh",
+  lgl: "1.8vw",
+  xl: "6.32vh",
+  xll: "3.6vw",
 };
 
 const fontSize = {
@@ -45,8 +60,8 @@ const fontSize = {
   mdl: "1.37vw",
   lg: "3.5vh",
   lgl: "1.8vw",
-  elg: "6.32vh",
-  elgl: "3.6vw",
+  xl: "6.32vh",
+  xll: "3.6vw",
 };
 
 const config: Config = {
@@ -64,6 +79,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      width: { ...elementSize },
+      height: { ...elementSize },
       colors,
       fontSize,
       spacing,

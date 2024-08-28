@@ -11,22 +11,20 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="h-screen bg-light-background dark:bg-dark-background night-owl:bg-night-owl-background">
-      <ColumnAtom
-        className={
-          "justify-center items-center h-full portrait:w-[90%] w-[75%] mx-auto portrait:gap-base gap-basel"
-        }
-      >
-        <TitleAtom size="elg" title="Tailwind Theme Switcher" />
-        <TextAtom
-          size="lg"
-          className="portrait:text-justify text-center"
-          text="A simple Tailwind CSS theme switcher template for Next.js projects, enabling quick and easy implementation of theme mode switching."
-        />
-        <RowAtom className="portrait:my-elg my-elgl">
-          <ThemeTogglerOrganism options={themeOptions} />
-        </RowAtom>
-      </ColumnAtom>
-    </main>
+    <ColumnAtom
+      className={
+        "justify-center items-center h-full portrait:w-[90%] w-[75%] mx-auto portrait:gap-base gap-basel"
+      }
+    >
+      <TitleAtom size="xl" title="Tailwind Theme Switcher" />
+      <TextAtom
+        size="lg"
+        className="portrait:text-justify text-center"
+        text="A simple Tailwind CSS theme switcher template for Next.js projects, enabling quick and easy implementation of theme mode switching."
+      />
+      <RowAtom className="portrait:my-xl my-xll">
+        <ThemeTogglerOrganism options={themeOptions} />
+      </RowAtom>
+    </ColumnAtom>
   );
 }
